@@ -2,66 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Practice</title>
-    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <title>bootstrapform</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
 </head>
 <body>
-<!-- 
- <button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on light</button>
-
- <img id="myImage" src="images/pic_bulboff.gif" alt="">
-
- <button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off light</button>
-<p id="cc"></p> -->
-<div class="container">
-  <div class="card mt-5">
-      <h4 class="text-center text-warning">Assignment 2 (Javascript)</h4>
-      <p id ="ass1" style="font-size: 30px;" class="mx-3 text-danger"></p>
-      <p id="ass2" style="font-size: 30px;" class="mx-3 text-danger"></p>
-      <p id="ass3" style="font-size: 30px;" class="mx-3 text-danger"></p>
-      <p id="ass4" style="font-size: 30px;" class="mx-3 text-danger"></p>
-      <p id="ass5" style="font-size: 30px;" class="mx-3 text-danger"></p>
+  <div class="container">
+    <form action="#"><br>
+        <div class="form-group ">
+            <label for="first-name">First Name:</label>
+            <input type="text" class="form-control" placeholder="Enter first-name" id="first-name" >
+        </div><br>
+        <div class="form-group">
+         <label for="last-name">Last Name:</label>
+         <input type="text" class="form-control" placeholder="Enter last-name" id="last-name" >
+     </div><br>
+     <div class="form-group">
+         <label for="username">Username:</label>
+         <input type="text" class="form-control" placeholder="Enter Username" id="username" >
+     </div><br>
+     <div class="form-group">
+         <label for="email">Email Address:</label>
+         <input type="email" class="form-control" placeholder="Enter Email" id="email" >
+     </div><br>
+     <div class="form-group">
+         <label for="Password">Password:</label>
+         <input type="pwd" class="form-control" placeholder="Enter Password" id="pwd" >
+     </div><br>
+     <div class="form-group">
+         <label for="Password">Confirm Password:</label>
+         <input type="pwd" class="form-control" placeholder="Confirm Password" id="pwd" >
+     </div>
+     <button class="btn btn-success btn-small">Submit</button><br>
+    </form> 
   </div>
 
-</div>
-
-
-<script>
-
-  var x = "software development solutions with boldlinks SOLUTIONS";
-  var y = x.length;
-  document.getElementById("ass1").innerHTML=(`1. The length of the charaters is ${y}`)
-
-  var x = "software development solutions with boldlinks 'SOLUTIONS'"
-  var y = x.substr(20,10 )
-  document.getElementById("ass2").innerHTML= (`2. The Substring is "${y}"`)
-
-  var x = "software development solutions with boldlinks SOLUTIONS";
-  var y = x 
-  .replace(/solutions/gi, "Technology")
-  document.getElementById("ass3").innerHTML = (`3. The answer is "${y}"`)
-
-  var x = "software development solutions with boldlinks SOLUTIONS"
-  var y = x.toLowerCase("software development solutions with boldlinks SOLUTIONS")
-  document.getElementById("ass4").innerHTML = (`4. The answer is "${y}"`)
-
-  var x ="9"
-  var z = "AAA"
-  var y = x.concat(z)
-  document.getElementById("ass5").innerHTML = (`5. The answer is "${y}"`)
 
 
 
 
 
-</script>
 
-<script src="bootstrap-4.6.1-dist/js/bootstrap.js"></script>
-<script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
-<script src="p.js"></script>
-<script src="practice.js"></script>  
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
